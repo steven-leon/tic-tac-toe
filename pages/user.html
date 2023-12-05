@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../img/tictactoe.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="header-h1">Tic-Tac-Toe</h1>
+    </header>
+
+    <main>
+        <div class="container-game">
+            <h2 class="game-turn">Player <span id="game-player"></span>'s turn</h2>
+            <div class="container-user">
+                <p class="user1">User1: <span id="user1"></span></p>
+                <p class="user2">User2: <span id="user2"></span></p>
+            </div>
+            <div class="game" id="game">
+              
+                <div class="game-block" id="block1"></div>
+                <div class="game-block" id="block2"></div>
+                <div class="game-block" id="block3"></div>
+                <div class="game-block" id="block4"></div>
+                <div class="game-block" id="block5"></div>
+                <div class="game-block" id="block6"></div>
+                <div class="game-block" id="block7"></div>
+                <div class="game-block" id="block8"></div>
+                <div class="game-block" id="block9"></div>
+            </div>
+            <div class="message-container" id="message-container">
+                <p class="winner-message" id="winner-message"></p>
+            </div>
+
+            <div class="buttons">
+                <button class="game-restart" onclick="restartAll()">Restart</button>
+                <button class="game-return" onclick="redirectionMain()">Return</button>
+            </div>
+            
+        </div>
+    </main>
+    
+  <script src="../js/user.js"></script>
+</body>
+</html>

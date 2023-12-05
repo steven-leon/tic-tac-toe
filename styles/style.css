@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: rgba(196, 180, 180, 0.796);
+    height: 100%;
+}
+header{
+    background-color: rgb(94, 100, 105);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #223a49;
+}
+
+.header-h1{
+    font-size: 110px;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container-game{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.game-turn{
+    font-size: 60px;
+    color: #596064;  
+}
+
+.container-user{
+    width: 300px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.user1, .user2{
+    font-size: 40px;
+    color: #596064;  
+}
+
+
+
+.game{
+    background-color: #596064;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    border: 5px solid #596064;
+}
+
+.game-block{
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color:  rgb(94, 100, 105);
+}
+
+.game-block:hover{
+    background-color: #d1d6da;
+}
+
+.game-restart{
+    background-color: rgb(94, 100, 105);
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #223a49;
+    color: #fff;
+    font-size: 30px;
+}
+
+.game-restart:hover{
+    background-color: rgb(59, 68, 75);
+}
+
+.game-return{
+    background-color: rgb(94, 100, 105);
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #223a49;
+    color: #fff;
+    font-size: 30px;
+}
+
+.game-return:hover{
+    background-color: rgb(59, 68, 75);
+}
+
+
+
+
+.message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+
+.winner-message {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
